@@ -23,7 +23,7 @@ const FormularioConsulta = () => {
   const enviarFormulario = () => {
     const serviceId = process.env.REACT_APP_API_SERVICE;
     const templated = process.env.REACT_APP_API_TEMPLATED;
-    const apiKey = "fDrf7ib8tZNU5G21n";
+    const apiKey = process.env.REACT_APP_API_APIKEY;
 
     emailjs
       .sendForm(serviceId, templated, refForm.current, apiKey)
